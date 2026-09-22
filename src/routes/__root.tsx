@@ -105,12 +105,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Grand Wiki" },
       { property: "og:description", content: "Grand Wiki - Comprehensive Grand RP Guides, Tools & Database" },
       { property: "og:type", content: "website" },
-    ],
     links: [
-      { rel: "icon", type: "image/png", href: "/Brand/Favicon.png" },
-      { rel: "shortcut icon", href: "/Brand/Favicon.png" },
-      { rel: "stylesheet", href: appCss },
-    ],
+  { rel: "icon", type: "image/png", href: "/Brand/Favicon.png" },
+  { rel: "stylesheet", href: appCss },
+  { rel: "preconnect", href: "https://fonts.googleapis.com" },
+  { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+  },
+],
   }),
   shellComponent: RootShell,
   component: RootComponent,
